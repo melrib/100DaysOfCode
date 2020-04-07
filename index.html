@@ -35,6 +35,11 @@
       var ui = H.ui.UI.createDefault(map, defaultLayers, 'pt-BR');
       var mapEvents = new H.mapevents.MapEvents(map);
       var behavior = new H.mapevents.Behavior(mapEvents);
+               
+      map.getViewModel().setLookAtData({
+  tilt: 60,
+  heading: 270
+});
 
 </script> 
 </body>
